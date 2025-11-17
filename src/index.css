@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+}
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@plugin "daisyui/theme" {
+  name: "foodlovers";
+  default: true;
+
+  --color-primary: #F39C12;       /* Main Orange — brand highlight color */
+  --color-secondary: #E67E22;     /* Darker Orange — gradient & hover contrast */
+  --color-accent: #7CB342;        /* Fresh Green — accent / success tone */
+  --color-neutral: #2C2C2C;       /* Neutral Text — for readable content */
+  --color-base-100: #FFF8E7;      /* Soft Cream Background — warm & clean */
+
+}
+
+
+.btn-primary {
+  @apply bg-gradient-to-r from-[#F39C12] to-[#E67E22] border-none text-white font-semibold shadow-md;
+}
+
+.btn-primary:hover {
+  @apply opacity-90 scale-[1.02] transition-transform duration-200;
+}
+
+
+.btn-secondary {
+  @apply bg-gradient-to-r from-[#7CB342] to-[#558B2F] border-none text-white font-medium;
+}
+
+.btn-secondary:hover {
+  @apply opacity-90;
+}
+
+a.active{
+  background-color: #F39C12;
+  color: white;
+}
+
+
+*{
+  font-family: "Inter", sans-serif;
+}
+
