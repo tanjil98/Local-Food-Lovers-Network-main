@@ -21,7 +21,7 @@ const router = createBrowserRouter([
             {
                 index: true,
                 Component: Home,
-                loader: () => fetch('https://local-food-lovers-network-server-fawn.vercel.app/reviews'),
+                loader: () => fetch('https://local-food-lovers-network-client-ya23.vercel.app/reviews'),
                 hydrateFallbackElement: <LoaderSpinner></LoaderSpinner>
             },
             {
@@ -41,7 +41,7 @@ const router = createBrowserRouter([
             {
                 path: '/allReview',
                 element: <AllReview></AllReview>,
-                loader: () => fetch("https://local-food-lovers-network-server-fawn.vercel.app/all-reviews"),
+                loader: () => fetch("https://local-food-lovers-network-client-ya23.vercel.app/all-reviews"),
                 hydrateFallbackElement: <LoaderSpinner></LoaderSpinner>
             },
             {
@@ -52,7 +52,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/editReview/:id',
-                loader: ({ params }) => fetch(`https://local-food-lovers-network-server-fawn.vercel.app/reviews/${params.id}`),
+                loader: ({ params }) => fetch(`https://local-food-lovers-network-client-ya23.vercel.app/reviews/${params.id}`),
                 element: <PrivateRoute>
                     <EditReview></EditReview>
                 </PrivateRoute>,
@@ -63,7 +63,7 @@ const router = createBrowserRouter([
                 element: <PrivateRoute>
                     <ViewDetail></ViewDetail>
                 </PrivateRoute>,
-                loader: ({ params }) => fetch(`https://local-food-lovers-network-server-fawn.vercel.app/reviews/${params.id}`),
+                loader: ({ params }) => fetch(`https://local-food-lovers-network-client-ya23.vercel.app/reviews/${params.id}`),
                 hydrateFallbackElement: <LoaderSpinner></LoaderSpinner>
             },
             {

@@ -13,7 +13,7 @@ const MyReview = () => {
 
     useEffect(() => {
         setLoadingReviews(true);
-        axiosInstance.get(`https://local-food-lovers-network-server-fawn.vercel.app/myReviews?email=${user.email}`)
+        axiosInstance.get(`https://local-food-lovers-network-client-ya23.vercel.app/myReviews?email=${user.email}`)
             .then((data) => {
                 setReview(data.data)
                 setLoadingReviews(false);
@@ -43,7 +43,7 @@ const MyReview = () => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                axiosInstance.delete(`https://local-food-lovers-network-server-fawn.vercel.app/reviews/${_id}`)
+                axiosInstance.delete(`https://local-food-lovers-network-client-ya23.vercel.app/reviews/${_id}`)
                     .then(data => {
                         // console.log(data.data.deletedCount);
                         if (data.data.deletedCount) {

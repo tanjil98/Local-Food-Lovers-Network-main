@@ -14,7 +14,7 @@ const MyFavorite = () => {
 
     useEffect(() => {
         setLoadingFavorite(true);
-        axiosInstance.get(`https://local-food-lovers-network-server-fawn.vercel.app/myFavorite?email=${user.email}`)
+        axiosInstance.get(`https://local-food-lovers-network-client-ya23.vercel.app/myFavorite?email=${user.email}`)
             .then((data) => {
                 setFavorites(data.data)
                 setLoadingFavorite(false);
@@ -38,7 +38,7 @@ const MyFavorite = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 axiosInstance
-                    .delete(`https://local-food-lovers-network-server-fawn.vercel.app/myFavorite/${_id}`)
+                    .delete(`https://local-food-lovers-network-client-ya23.vercel.app/myFavorite/${_id}`)
                     .then((res) => {
                         if (res.data.deletedCount) {
                             Swal.fire({
