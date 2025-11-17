@@ -14,7 +14,8 @@ const MyFavorite = () => {
 
     useEffect(() => {
         setLoadingFavorite(true);
-        axiosInstance.get(`https://local-food-lovers-network-client-ya23.vercel.app/myFavorite?email=${user.email}`)
+        // 👇 [CHANGE KORA HOYECHE] Purono URL fele deoa hoyeche
+        axiosInstance.get(`/myFavorite?email=${user.email}`)
             .then((data) => {
                 setFavorites(data.data)
                 setLoadingFavorite(false);
@@ -38,7 +39,8 @@ const MyFavorite = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 axiosInstance
-                    .delete(`https://local-food-lovers-network-client-ya23.vercel.app/myFavorite/${_id}`)
+                    // 👇 [CHANGE KORA HOYECHE] Purono URL fele deoa hoyeche
+                    .delete(`/myFavorite/${_id}`)
                     .then((res) => {
                         if (res.data.deletedCount) {
                             Swal.fire({

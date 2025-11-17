@@ -12,6 +12,7 @@ import ViewDetail from "../pages/ViewDetails/ViewDetail";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import LoaderSpinner from "../components/LoaderSpinner/LoaderSpinner";
 import MyFavorite from "../pages/MyFavorite/MyFavorite";
+
 const router = createBrowserRouter([
     {
         path: '/',
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
             {
                 index: true,
                 Component: Home,
+                // 👇 [CHANGE KORA HOYECHE] Purono URL replace kora holo
                 loader: () => fetch('https://local-food-lovers-network-client-ya23.vercel.app/reviews'),
                 hydrateFallbackElement: <LoaderSpinner></LoaderSpinner>
             },
@@ -41,6 +43,7 @@ const router = createBrowserRouter([
             {
                 path: '/allReview',
                 element: <AllReview></AllReview>,
+                // 👇 [CHANGE KORA HOYECHE] Purono URL replace kora holo
                 loader: () => fetch("https://local-food-lovers-network-client-ya23.vercel.app/all-reviews"),
                 hydrateFallbackElement: <LoaderSpinner></LoaderSpinner>
             },
@@ -52,6 +55,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/editReview/:id',
+                // 👇 [CHANGE KORA HOYECHE] Purono URL replace kora holo
                 loader: ({ params }) => fetch(`https://local-food-lovers-network-client-ya23.vercel.app/reviews/${params.id}`),
                 element: <PrivateRoute>
                     <EditReview></EditReview>
@@ -63,6 +67,7 @@ const router = createBrowserRouter([
                 element: <PrivateRoute>
                     <ViewDetail></ViewDetail>
                 </PrivateRoute>,
+                // 👇 [CHANGE KORA HOYECHE] Purono URL replace kora holo
                 loader: ({ params }) => fetch(`https://local-food-lovers-network-client-ya23.vercel.app/reviews/${params.id}`),
                 hydrateFallbackElement: <LoaderSpinner></LoaderSpinner>
             },
