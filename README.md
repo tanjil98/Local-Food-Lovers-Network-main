@@ -6,8 +6,8 @@ Users can share reviews, rate dishes, and save their favorite experiences in a p
 ---
 
 ## Live Website  
-Client: [https://food-lovers-80c58.web.app/](https://food-lovers-80c58.web.app/)  
-Server: [https://local-food-lovers-network-server-fawn.vercel.app/](https://local-food-lovers-network-server-fawn.vercel.app/)
+Client: [https://food-lover-d4878.web.app]
+Server: [https://local-food-lovers-network-client.vercel.app]
 
 ---
 
@@ -40,9 +40,9 @@ Server: [https://local-food-lovers-network-server-fawn.vercel.app/](https://loca
 
 
 ## Developer
-**Developer:** Arif Billah  
-**Email:** arifbillahmubin@gmail.com  
-**GitHub:** [https://github.com/ArifBillahMubin](https://github.com/ArifBillahMubin)
+**Developer:** Tanjil Hasan Sakib  
+**Email:** 98asaib@gmail.com
+**GitHub:** [https://github.com/tanjil98]
 
 ---
 

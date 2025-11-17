@@ -80,11 +80,11 @@ const Home = () => {
                     {/*  1 */}
                     <div className="bg-white/90 border border-[#F39C12]/20 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-xl hover:scale-[1.03] transition-transform duration-300">
                         <img
-                            src="https://avatars.githubusercontent.com/u/190505557?v=4"
+                            src="https://avatars.githubusercontent.com/u/114361501?v=4"
                             alt=""
                             className="w-24 h-24 rounded-full border-4 border-[#F39C12] object-cover"
                         />
-                        <h3 className="text-xl font-bold text-[#E67E22] mt-4">Arif Billah</h3>
+                        <h3 className="text-xl font-bold text-[#E67E22] mt-4">Tanjil Hasan Sakib</h3>
                         <p className="text-gray-600"> 28 Reviews</p>
                         <p className="italic text-gray-500 mt-2 text-sm">“Street food is pure happiness.”</p>
                     </div>
@@ -96,7 +96,7 @@ const Home = () => {
                             alt=""
                             className="w-24 h-24 rounded-full border-4 border-[#F39C12] object-cover"
                         />
-                        <h3 className="text-xl font-bold text-[#E67E22] mt-4">Tanvir Hasan</h3>
+                        <h3 className="text-xl font-bold text-[#E67E22] mt-4">Saiham or Rashid</h3>
                         <p className="text-gray-600"> 22 Reviews</p>
                         <p className="italic text-gray-500 mt-2 text-sm">“Good food, good mood, always!”</p>
                     </div>
@@ -108,7 +108,7 @@ const Home = () => {
                             alt=""
                             className="w-24 h-24 rounded-full border-4 border-[#F39C12] object-cover"
                         />
-                        <h3 className="text-xl font-bold text-[#E67E22] mt-4">Sadia Rahman</h3>
+                        <h3 className="text-xl font-bold text-[#E67E22] mt-4">Al Zabir</h3>
                         <p className="text-gray-600"> 19 Reviews</p>
                         <p className="italic text-gray-500 mt-2 text-sm">“Food connects people more than anything.”</p>
                     </div>

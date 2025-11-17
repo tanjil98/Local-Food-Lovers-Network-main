@@ -23,7 +23,7 @@ const router = createBrowserRouter([
                 index: true,
                 Component: Home,
                 // 👇 [CHANGE KORA HOYECHE] Purono URL replace kora holo
-                loader: () => fetch('https://local-food-lovers-network-client-ya23.vercel.app/reviews'),
+                loader: () => fetch('https://local-food-lovers-network-client.vercel.app/reviews'),
                 hydrateFallbackElement: <LoaderSpinner></LoaderSpinner>
             },
             {
@@ -44,7 +44,7 @@ const router = createBrowserRouter([
                 path: '/allReview',
                 element: <AllReview></AllReview>,
                 // 👇 [CHANGE KORA HOYECHE] Purono URL replace kora holo
-                loader: () => fetch("https://local-food-lovers-network-client-ya23.vercel.app/all-reviews"),
+                loader: () => fetch("https://local-food-lovers-network-client.vercel.app/all-reviews"),
                 hydrateFallbackElement: <LoaderSpinner></LoaderSpinner>
             },
             {
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
             {
                 path: '/editReview/:id',
                 // 👇 [CHANGE KORA HOYECHE] Purono URL replace kora holo
-                loader: ({ params }) => fetch(`https://local-food-lovers-network-client-ya23.vercel.app/reviews/${params.id}`),
+                loader: ({ params }) => fetch(`https://local-food-lovers-network-client.vercel.app/reviews/${params.id}`),
                 element: <PrivateRoute>
                     <EditReview></EditReview>
                 </PrivateRoute>,
@@ -68,7 +68,7 @@ const router = createBrowserRouter([
                     <ViewDetail></ViewDetail>
                 </PrivateRoute>,
                 // 👇 [CHANGE KORA HOYECHE] Purono URL replace kora holo
-                loader: ({ params }) => fetch(`https://local-food-lovers-network-client-ya23.vercel.app/reviews/${params.id}`),
+                loader: ({ params }) => fetch(`https://local-food-lovers-network-client.vercel.app/reviews/${params.id}`),
                 hydrateFallbackElement: <LoaderSpinner></LoaderSpinner>
             },
             {
